@@ -3,10 +3,10 @@ const knex = require("knex");
 const db = knex({
   client: "mysql",
   connection: {
-    host: "localhost",
-    user: "zain",
-    password: "zain123",
-    database: "emp",
+    host: "sql12.freesqldatabase.com",
+    user: "sql12625836",
+    password: "23LpBefahw",
+    database: "sql12625836",
   },
 });
 
