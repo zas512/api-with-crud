@@ -31,11 +31,11 @@ app.use(
 app.get("/", (req, res) => {
   db.raw("SELECT 1")
     .then(() => {
-      res.send("Database connection successful");
+      res.json({ message: "Database connection successful" });
     })
     .catch((err) => {
       console.error("Error connecting to the database:", err);
-      res.status(500).send("Failed to connect to the database");
+      res.status(500).json({ message: "Failed to connect to the database" });
     });
 });
 
