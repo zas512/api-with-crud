@@ -9,7 +9,10 @@ const app = express();
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 8080;
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://crud-project-by-zain.vercel.app",
+];
 app.use(
   cors({
     origin: function (origin, callback) {
